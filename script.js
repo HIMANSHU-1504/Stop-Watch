@@ -31,6 +31,7 @@ const resetTimer = () => {
 
 const getTimer = () => {
     const newPara = document.createElement('p');
+    startCount == 0 ? 0 : startCount;
     newPara.innerText = `The time stops at ${startCount-1}`;
     resetValue.append(newPara);
 };
